@@ -22,7 +22,7 @@ miFuncion([1, 2, 3],[“a”, “b”, “c”] ) => [1, 'a', 2, 'b', 3, 'c']
   vector2[0] = "b";
   vector2[0] = "c";
  
-  let funcion = function (vector1[]; vector2[]) { 
+  let funcion = function (vector1[]:array ; vector2[]:array) { 
   let vector3: string[] = new Array(6);
   let segundo: number = -1;
     for (let i = 0; i<6; i++){
@@ -30,8 +30,8 @@ miFuncion([1, 2, 3],[“a”, “b”, “c”] ) => [1, 'a', 2, 'b', 3, 'c']
       segundo = segundo +2;
       vector3[segundo] = vector2[i];
     }
-    for (i = 0; i<6;i++ ){
+    for (let i = 0; i<6;i++ ){
       console.log(vector3[i])
     }
 };
-funcion();
+funcion(vector1;vector2);

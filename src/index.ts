@@ -24,11 +24,18 @@ vector2[0] = "c";
 
 let funcion = function (vector1: string[], vector2: string[]) {
   let vector3: string[] = new Array(6);
-  let segundo: number = -1;
-  for (let i = 0; i < 6; i++) {
-    vector3[i] = vector1[i];
-    segundo = segundo + 2;
-    vector3[segundo] = vector2[i];
+  let corte: boolean = false;
+  let posicion1: number = 0;
+  let posicion2: number = 1;
+
+  while (corte !== true) {
+    vector3[posicion1] = vector1[posicion1];
+    vector3[posicion2] = vector2[posicion2];
+    posicion1 = posicion1 + 2;
+    posicion2 = posicion2 + 2;
+    if (posicion1 === 2) {
+      corte = true;
+    }
   }
   for (let i = 0; i < 6; i++) {
     console.log(vector3[i]);

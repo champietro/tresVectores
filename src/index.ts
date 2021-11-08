@@ -33,7 +33,7 @@ let funcion = function (vector1: string[], vector2: string[]) {
     vector3[posicion2] = vector2[posicion2];
     posicion1 = posicion1 + 2;
     posicion2 = posicion2 + 2;
-    if (posicion1 === 2) {
+    if (posicion1 === 4) {
       corte = true;
     }
   }

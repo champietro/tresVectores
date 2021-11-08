@@ -19,8 +19,8 @@ vector1[1] = "2";
 vector1[2] = "3";
 
 vector2[0] = "a";
-vector2[0] = "b";
-vector2[0] = "c";
+vector2[1] = "b";
+vector2[2] = "c";
 
 let funcion = function (vector1: string[], vector2: string[]) {
   let vector3: string[] = new Array(6);

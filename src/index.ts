@@ -22,7 +22,7 @@ miFuncion([1, 2, 3],[“a”, “b”, “c”] ) => [1, 'a', 2, 'b', 3, 'c']
   vector2[0] = "b";
   vector2[0] = "c";
  
-  let funcion = function (vector1[]:array ; vector2[]:array) { 
+  let funcion = function (vector1:string[] ; vector2[]:string[]) { 
   let vector3: string[] = new Array(6);
   let segundo: number = -1;
     for (let i = 0; i<6; i++){

@@ -26,13 +26,13 @@ let funcion = function (vector1: string[], vector2: string[]) {
   let vector3: string[] = new Array(6);
   let corte: boolean = false;
   let posicion1: number = 0;
-  let posicion2: number = 1;
+  let posicion3: number = 0;
 
   while (corte !== true) {
-    vector3[posicion1] = vector1[posicion1];
-    vector3[posicion2] = vector2[posicion2];
-    posicion1 = posicion1 + 2;
-    posicion2 = posicion2 + 2;
+    vector3[posicion3] = vector1[posicion1];
+    posicion3 = posicion3 + 1;
+    vector3[posicion3] = vector2[posicion2];
+    posicion1 = posicion1 + 1;
     if (posicion1 === 4) {
       corte = true;
     }

@@ -31,9 +31,10 @@ let funcion = function (vector1: string[], vector2: string[]) {
   while (corte !== true) {
     vector3[posicion3] = vector1[posicion1];
     posicion3 = posicion3 + 1;
-    vector3[posicion3] = vector2[posicion2];
+    vector3[posicion3] = vector2[posicion1];
     posicion1 = posicion1 + 1;
-    if (posicion1 === 4) {
+    posicion3 = posicion3 + 1;
+    if (posicion1 === 3) {
       corte = true;
     }
   }
